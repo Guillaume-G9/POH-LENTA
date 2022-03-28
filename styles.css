@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Sri Papan';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sri Papan'), url('./fonts/sri-papan_woff/Sri\ Papan.woff') format('woff');
+}
+   
+ul, li {
+    list-style-type: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center/100% url(./images/pexels-marcantoine-2457183.jpg);
+    height: 100vh;
+    color: white;
+    filter: brightness(0.8);
+}
+
+.team {
+    color: black;
+    display: none;
+    position: absolute;
+    margin-left: -82%;
+    width: 8vw;
+    background-color: red;
+    padding: 1% 2% 1% 2%;
+    border-radius: 12px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(78, 65, 53, 0.603);
+    padding: 2%;
+    border-radius: 15px;
+    height: 65vh;
+    width: 60vw;
+}
+
+h1 {
+    font-family: 'Sri Papan' ;
+    padding-bottom: 10%;
+    font-size: 8em;
+    color: rgb(231, 141, 39);
+    text-shadow: 8px 8px 5px rgb(0, 0, 0);
+}
+
+
+ul {
+    display: flex;
+    width: 60vw;
+    color: black;
+    font-size: 1.5em;
+    justify-content: space-around;
+    gap: 50%;
+    padding-top: 5%;
+}
+
+li:first-of-type {
+    padding: 1% 2% 1% 2%;
+    border-radius: 12px;
+    background-color: red;
+}
+
+li:nth-child(2) {
+    padding:  1% 2% 1% 2%;
+    background-color: gold;
+    border-radius: 12px;
+}
+
+li:hover {
+    cursor: pointer;
+}
