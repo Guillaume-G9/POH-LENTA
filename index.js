@@ -71,7 +71,7 @@ main.addEventListener("click", (e) => {
 
                                         if(e.target.className ==="red") {
                                             fnEndGame()
-                                            mainTxt.textContent = `Vous avez été eliminé du jeu, le reste de l'équipe a feinté semblant de vous pardonner pour mieux vous éliminer`
+                                            mainTxt.textContent = `Vous avez été eliminé du jeu, le reste de l'équipe a fait semblant de vous pardonner pour mieux vous éliminer`
     
                                             finalState.textContent = `LE CREDULE`
                                             nextBtn.textContent = `REJOUER`
@@ -269,7 +269,7 @@ main.addEventListener("click", (e) => {
                     leftBtn.style.display ="none"
                     rightBtn.style.display ="none"
                     nextBtn.style.display = "block"
-                    mainTxt.textContent = `Vous allez utilisé une bonne partie de votre force vitale pour vous nourrir, le jeune intermitant était peut-être la solution`
+                    mainTxt.textContent = `Vous allez utilisé une bonne partie de votre force vitale pour vous nourrir, le jeûne intermitant était peut-être la solution`
                     life.style.width = "60%"
                     nextBtn.addEventListener("click", () => {
                         leftBtn.style.display ="block"
@@ -328,13 +328,13 @@ main.addEventListener("click", (e) => {
                                         }
 
                                     } else if(e.target.className === "yellow") {
-                                        fnEndGame()
                                         mainTxt.textContent = `Le glandeur à vraiment eu pitié de vous, il vous à donc donné à manger, mais c'est un glandeur donc il n'a pas reussi à différencier les racines, vous mourrez intoxiqué`
                                         
                                         finalState.textContent = `VOUS AVEZ PERDU`
                                         nextBtn.textContent = `REJOUER`
                                         life.style.width = "0%"
-
+                                        
+                                        fnEndGame()
                                         fart.play()
                                         leftBtn.style.display ="none"
                                         rightBtn.style.display ="none"
